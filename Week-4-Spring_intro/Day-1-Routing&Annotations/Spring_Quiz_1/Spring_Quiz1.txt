@@ -1,0 +1,20 @@
+Spring Quiz-1:
+
+
+1. Typing a URL into the address bar of a browser and hitting enter, clicking on a link, submitting a form, and refreshing a page are all examples of a client request.
+Answer : True
+
+2. The content sent back from the server is called a response.
+Answer : True
+
+
+3. One of the major benefits of MVC is the concept of separation of concerns.
+Answer :True
+
+
+4. The @RestController annotation is used to return JSON data.
+Answer : True
+
+
+5. The default request method is 'POST'
+Answer : False
