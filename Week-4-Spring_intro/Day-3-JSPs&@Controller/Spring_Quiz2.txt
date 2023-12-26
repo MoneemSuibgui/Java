@@ -1,0 +1,22 @@
+
+Spring Quiz 2:
+
+
+1. Java Server Pages handle views and inject data and logic into HTML responses
+Answer : True
+
+2. We use JSTL tags to dynamically populate our templates with data from the server.
+Answer : True
+
+3. In order to render a JSP file, we use the @RestController annotation.
+Answer : False (@RestController annotaion used to return a String or jason object ,we use @Controller to render our jsp file)
+
+4. Model objects use key-value pairs to pass data to our view.
+Answer:True
+
+5. Model objects automatically pass all variables to our view.
+Answer:False 
+
+( whenever you import Model object into your controller you can use it as a container
+ to store data and pass that data to the view engine. Data can be any type: objects, strings, numbers, even dates! And you can use it in any of your method signatures. When the framework gets a request mapped to that function, it will automatically create that Model instance container, the model variable in our code below. 
+This is an example of dependency injection.)
