@@ -1,0 +1,19 @@
+@charset "ISO-8859-1";
+
+
+body{
+    color: blue;
+    text-align: center;
+    padding-top: 10%;
+}
+div{
+	align-items: center;
+	display: flex;
+    justify-content: space-evenly;
+}
+a,h3{
+	font-size: 80px;
+	margin:20px;
+	padding:10%;
+}
+
