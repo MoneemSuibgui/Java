@@ -1,0 +1,21 @@
+@charset "ISO-8859-1";
+
+h1{
+	color:red;
+}
+body{
+	margin:5% 30%;
+}
+table{
+	width:400px;
+	border:10px red solid;
+}
+th,td{
+	padding:5px 2px;
+	text-align:start;
+}
+td{
+	border:2px red solid;
+	background-color:black;
+	color:white;
+}
