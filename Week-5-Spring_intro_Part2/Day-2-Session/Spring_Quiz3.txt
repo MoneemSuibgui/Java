@@ -1,0 +1,23 @@
+
+Spring Quiz 3:
+
+
+1. Spring Boot automatically looks inside the static folder for CSS and JavaScript files.
+Answer : True
+
+
+2. All requests are stateless, meaning they don't remember anything that happened before.
+Answer : True
+
+
+3. Session is a method of data persistence that is typically used for temporary storage.
+Answer : True
+
+
+4. Session uses key-value pairs to store data.
+Answer : True
+
+
+5. Session key-value pairs are deleted once they are passed to our view.
+Answer : False
+
