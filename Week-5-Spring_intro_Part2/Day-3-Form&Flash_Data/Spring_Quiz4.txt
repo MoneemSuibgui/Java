@@ -1,0 +1,25 @@
+
+Spring Quiz 4:
+
+
+1. The form action attribute contains the route that handles what happens after we submit the form.
+Answer : True
+
+
+2. Input elements must be of type text.
+Answer : False (there are a lot of types for input element:text,password,number...) 
+
+
+
+3. The value property in our @RequestParam annotation must match the input type.
+Answer : False (The value property in our @RequestParam annotation must match the input name)
+
+
+
+4. POST requests are always cached.
+Answer : False (POST requests are never cached)
+
+
+
+5. POST requests should always redirect to other routes in order to avoid sending the same request twice.
+Answer: True
