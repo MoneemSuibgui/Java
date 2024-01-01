@@ -1,4 +1,4 @@
-package com.book_api.moneem.models;
+package com.rendering_all_books.moneem.models;
 
 import java.util.Date;
 

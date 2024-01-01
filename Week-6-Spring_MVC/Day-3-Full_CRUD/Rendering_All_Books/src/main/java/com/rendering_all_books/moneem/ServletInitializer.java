@@ -1,4 +1,4 @@
-package com.book_api.moneem;
+package com.rendering_all_books.moneem;
 
 import org.springframework.boot.builder.SpringApplicationBuilder;
 import org.springframework.boot.web.servlet.support.SpringBootServletInitializer;

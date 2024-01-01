@@ -1,12 +1,12 @@
-package com.book_api.moneem.services;
+package com.rendering_all_books.moneem.services;
 
 import java.util.List;
 import java.util.Optional;
 
 import org.springframework.stereotype.Service;
 
-import com.book_api.moneem.models.Book;
-import com.book_api.moneem.repositories.BookRepository;
+import com.rendering_all_books.moneem.models.Book;
+import com.rendering_all_books.moneem.repositories.BookRepository;
 
 @Service
 public class BookService {

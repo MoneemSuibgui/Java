@@ -1,4 +1,4 @@
-package com.book_api.moneem.controllers;
+package com.rendering_all_books.moneem.controllers;
 
 import java.util.List;
 
@@ -8,8 +8,8 @@ import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
-import com.book_api.moneem.models.Book;
-import com.book_api.moneem.services.BookService;
+import com.rendering_all_books.moneem.models.Book;
+import com.rendering_all_books.moneem.services.BookService;
 
 @RestController
 public class MainCotntroller {
@@ -20,13 +20,13 @@ public class MainCotntroller {
 		this.bookService=bookService;
 	}
 	
-	// display route get the list of all books (Get all books) 
+	// Get all books
 	@RequestMapping("/api/books")
 	public List<Book> getAllBooks(){
 		return bookService.allBooks();
 	}
 	
-	// Action route(Create one book)
+	// Create one book
 	@RequestMapping(value="/api/books" ,method=RequestMethod.POST)
 	public Book createBook(@RequestParam("title") String title,
 			               @RequestParam("description") String description,
@@ -39,7 +39,7 @@ public class MainCotntroller {
 		return bookService.createBook(book);	
 	}
 	
-	// Delete route(delete one book)
+	// Delete one book
 	@RequestMapping(value="/api/books/{id}",method=RequestMethod.DELETE)
 	public String deleteOneBook(@PathVariable("id") Long id) {
 		return bookService.deleteBook(id);
