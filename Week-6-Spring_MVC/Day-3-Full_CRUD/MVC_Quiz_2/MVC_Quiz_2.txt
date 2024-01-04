@@ -1,0 +1,22 @@
+
+MVC Quiz 2:
+
+
+1. @RestController is used to send raw data, while @Controller is used to send HTML.
+Answer: True
+
+
+2. Data Binding allows us to collect all user input and bundle it into an object.
+Answer : True
+
+
+3. We must provide the @ModelAttribute in both 'GET' and 'POST' requests.
+Answer : True
+
+
+4. We cannot use the same route for 'GET' and 'POST' requests.
+Answer : False (we could use the same route for 'GET' and 'POST' requests)
+
+
+5. BindingResult must be placed before @ModelAttribute in our controller.
+Answer : False (BindingResult must be placed after @ModelAttribute in our controller)
