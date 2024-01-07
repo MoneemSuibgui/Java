@@ -1,0 +1,26 @@
+
+Annotations Used:
+
+
+* @OneToOne: Defines the 1:1 relationship with another entity. There are different options that you can have in the annotation, and it is extremely important that you use the correct one depending on which side of the relationship your entity is.
+
+* @OneToOne(mappedBy="person"): This will map the license attribute in the Person class
+ to the person attribute in the License class. It represents the field
+ that owns the relationship. This element is only specified on the inverse
+ (non-owning) side of the association.
+
+* @OneToOne(cascade=CascadeType.ALL): The operations that must be cascaded 
+ to the target of the association. This will make sure referential integrity 
+ is preserved in ALL actions.
+
+* @OneToOne(fetch=FetchType.LAZY): Whether the association should be lazily loaded
+ or must be eagerly fetched.
+
+* LAZY: The association is fetched when needed
+
+* EAGER: The association is fetched immediately.
+
+
+* @JoinColumn(name="person_id"): Defines mapping for composite foreign keys.
+ It indicates that the corresponding table to this entity has a foreign key 
+ to the referenced table.
