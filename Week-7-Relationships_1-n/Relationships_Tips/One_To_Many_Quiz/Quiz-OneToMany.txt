@@ -1,0 +1,13 @@
+
+Relationships One To Many Quiz:
+
+
+1. Adding a CascadeType to a relationship ensures that referential integrity is preserved.
+Answer : True
+
+2. OneToMany relationships do not count as member variables.
+Answer : False
+
+
+3. We may include hidden inputs in our forms when working with databases.
+Answer : True
