@@ -1,0 +1,29 @@
+
+Authentication_Quiz:
+
+
+
+1. The @Transient annotation safely stores our password in the database.
+Answer : False
+
+2. Hashing and encryption can be used interchangeably.
+Answer : False
+
+
+3. Brute force attacks make hacking hashed passwords possible.
+Answer : True
+
+
+4. A salt is a random long string added to a user's password before it is hashed.
+Answer : True
+
+
+5. Bcrypt was designed to be slow in order to make hacking more difficult.
+Answer : True
+
+6. The @Autowired annotation allows us to skip writing a constructor.
+Answer : True
+
+
+7. We can only use predefined validation with BindingResult.
+Answer : False
