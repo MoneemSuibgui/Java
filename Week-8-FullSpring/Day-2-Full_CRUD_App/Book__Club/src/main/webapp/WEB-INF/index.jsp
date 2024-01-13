@@ -24,14 +24,14 @@
 	<%-- adding some styling using bootstrap library --%>
 	<div class="container mt-5">
 		<div class="row">
-			<h1 class="mb-3">Welcome</h1>
-			<h4 class="mb-5">Join our growing community</h4>
+			<h1 class="mb-3 text-primary">Book Club</h1>
+			<h4 class="mb-5">A place for friends to share thoughts on books</h4>
 			<div class="col-5 bg-warning p-3 border border-4">
 			<h2 class="mx-5 mb-3">Register</h2>
 				<form:form action="/register" method="post" modelAttribute="newUser">
 
 
-					<form:label path="userName">Username : </form:label>
+					<form:label path="userName">Name : </form:label>
 					<p><form:errors path="userName" class="text-danger" /></p>
 					<form:input path="userName" class="form-control mb-3" />
 
