@@ -34,9 +34,9 @@
 			<h5>Books from everyone's shelves</h5>
 			<a href="/books/new">+ Add a to my shelf</a>
 		</div>
-		<table class="table table-bordered ">
+		<table class="table table-bordered table-striped table-hover">
 			<thead>
-				<tr>
+				<tr class="bg-info">
 					<th>ID</th>
 					<th>Title</th>
 					<th>Author Name</th>
@@ -47,15 +47,13 @@
 				<c:forEach var="book" items="${books}">
 					<tr>
 						<td><c:out value="${book.id}"></c:out></td>
-						<td><c:out value="${book.title}" /></td>
+						<td><a href="/books/${book.id}/"><c:out value="${book.title}" /></a></td>
 						<td><c:out value="${book.author}" /></td>
 						<td><c:out value="${book.creator.userName}" /></td>
 					</tr>
 				</c:forEach>
 			</tbody>
 		</table>
-
 	</div>
-
 </body>
 </html>
