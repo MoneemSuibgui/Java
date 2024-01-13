@@ -1,6 +1,7 @@
 package com.book_club.moneem.services;
 
 import java.util.List;
+import java.util.Optional;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -30,4 +31,18 @@ public class BookService {
 		
 	}
 
+	// get one book
+	public Book getOne(Long id) {
+		Optional<Book> book=this.repository.findById(id);
+		if(book.isPresent()) {
+			return book.get();
+		}return null;
+	}
+	
+	// delete book
+	public void delete(Long id) {
+		this.repository.deleteById(id);		
+	}
+	
 }
+
