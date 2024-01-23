@@ -12,6 +12,7 @@ import com.book_club.moneem.repositories.BookRepository;
 @Service
 public class BookService {
 	
+	// inject BookRepository to the BookService using @Autowired annotation
 	@Autowired
 	private BookRepository repository;
 	
