@@ -34,6 +34,7 @@ public class UserService {
 			// adding validation errors to the result
 			result.rejectValue("password", "pwMatches","* Password & Confirm PW doesn't match !!!!");
 		}if(userRepo.findByEmail(user.getEmail()).isPresent()){
+			// check if the email already exist into database ,if it's result will take error message to displayed the user 
 			result.rejectValue("email","emailMatch", "* Email already token");
 		}
 		else {
