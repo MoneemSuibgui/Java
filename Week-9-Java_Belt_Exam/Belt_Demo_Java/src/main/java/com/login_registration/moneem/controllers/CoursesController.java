@@ -9,6 +9,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.validation.BindingResult;
+import org.springframework.web.bind.annotation.DeleteMapping;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.PathVariable;
@@ -115,7 +116,8 @@ public class CoursesController {
 	}
 
 
-	@GetMapping("/delete/{courseId}")
+	// Action route delete course using @DeleteMapping annotation
+	@DeleteMapping("/delete/{courseId}")
 	public String destroyCourse(@PathVariable("courseId") Long id) {
 		Course course = courseServ.getOne(id);
 		course.setCreator(null);
@@ -126,7 +128,6 @@ public class CoursesController {
 	// Action route add student to db
 	@PostMapping("/add/student/{courseId}")
 	public String addStudent(@ModelAttribute("student") Student student, @PathVariable("courseId") Long courseId) {
-
 		studentServ.add(student);
 		return "redirect:/classes/" + courseId;
 	}
