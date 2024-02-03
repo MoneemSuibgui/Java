@@ -13,7 +13,7 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title><c:out value="${loggedUser}" /></title>
+<title><c:out value="${loggedUser}"/></title>
 <link rel="stylesheet" href="/webjars/bootstrap/css/bootstrap.min.css">
 </head>
 <body>
