@@ -1,5 +1,6 @@
 package com.login_registration.moneem.models;
 
+import java.time.LocalTime;
 import java.util.Date;
 import java.util.List;
 
@@ -43,8 +44,8 @@ public class Course {
 	@NotEmpty(message = "Description must not be blank!")
 	private String description;
 
-	@NotEmpty(message = "Time must not be blank!")
-	private String time;
+	// @NotEmpty(message = "Time must not be blank!")
+	private LocalTime time;
 
 	@DateTimeFormat(pattern = "yyyy-MM-dd")
 	@Column(updatable = false)
@@ -53,23 +54,15 @@ public class Course {
 	@DateTimeFormat(pattern = "yyyy-MM-dd")
 	private Date updatedAt;
 
-	// Many to one  creator or instructor can create many courses
+	// Many to one creator or instructor can create many courses
 	@ManyToOne(fetch = FetchType.LAZY)
 	@JoinColumn(name = "user_id")
 	private User creator;
-	
 
-
-	
 	// M:M courses can have many to many
-	   @ManyToMany(fetch = FetchType.LAZY)
-	    @JoinTable(
-	        name = "courses_students", 
-	        joinColumns = @JoinColumn(name = "course_id"), 
-	        inverseJoinColumns = @JoinColumn(name = "student_id")
-	    )
-	    private List<Student> studentsCourse;
-
+	@ManyToMany(fetch = FetchType.LAZY)
+	@JoinTable(name = "courses_students", joinColumns = @JoinColumn(name = "course_id"), inverseJoinColumns = @JoinColumn(name = "student_id"))
+	private List<Student> studentsCourse;
 
 	// empty constructor
 
@@ -81,6 +74,7 @@ public class Course {
 	public Long getId() {
 		return id;
 	}
+
 	@PrePersist
 	protected void onCreate() {
 		this.createdAt = new Date();
@@ -135,11 +129,11 @@ public class Course {
 		this.description = description;
 	}
 
-	public String getTime() {
+	public LocalTime getTime() {
 		return time;
 	}
 
-	public void setTime(String time) {
+	public void setTime(LocalTime time) {
 		this.time = time;
 	}
 
@@ -166,8 +160,5 @@ public class Course {
 	public void setUpdatedAt(Date updatedAt) {
 		this.updatedAt = updatedAt;
 	}
-
-
-	
 
 }
