@@ -52,8 +52,8 @@
 			</td>
 			<td><c:out value="${course.day }"></c:out></td>
 			<td>$<c:out value="${course.price }"></c:out></td>
-			<td><c:out value="${course.time }">
-			<fmt:formatDate value="${course.time}" pattern=" HH:mm:ss" /></c:out></td>
+			<td><c:out value="${course.time}">
+			<fmt:formatDate value="${course.time}" pattern="hh:mm:ss a"/></c:out></td>
 			</tr>
 		</c:forEach>
 	</tbody>
