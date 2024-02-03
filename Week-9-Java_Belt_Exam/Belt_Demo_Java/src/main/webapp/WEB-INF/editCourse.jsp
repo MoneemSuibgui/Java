@@ -57,22 +57,28 @@
 				<form:errors path="time" class="text-danger"></form:errors>
 			</p>
 			<form:label path="time">Time :</form:label>
-			<form:input path="time" class="form-control mb-3" />
+			<form:input path="time" type="time" class="form-control mb-3" />
 
 			<p>
 				<form:errors path="description" class="text-danger"></form:errors>
 			</p>
 			<form:label path="description">Description :</form:label>
 			<form:textarea path="description" class="form-control mb-3" />
-			
+
 			<div class="d-flex justify-content-around mt-4">
-				<a href="/delete/${course.id}" class="btn btn-danger btn-lg mx-5">Delete</a>
+
+				<form action="/delete/${course.id}" method="post">
+					<input type="hidden" name="_method" value="delete"> 
+					<input type="submit" class="btn btn-danger btn-lg mx-5" value="Delete" >
+				</form>
+
 				<div>
-					<input type="submit" class="btn btn-primary btn-lg mx-2" value="Update" />
-					<a href="/classes" class="btn btn-warning btn-lg">Cancel</a>
+					<input type="submit" class="btn btn-primary btn-lg mx-2"
+						value="Update" /> <a href="/classes"
+						class="btn btn-warning btn-lg">Cancel</a>
 				</div>
 			</div>
-			
+
 		</form:form>
 
 	</div>
