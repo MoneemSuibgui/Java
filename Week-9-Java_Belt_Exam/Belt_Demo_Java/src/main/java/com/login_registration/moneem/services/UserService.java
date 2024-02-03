@@ -28,12 +28,15 @@ public class UserService {
 	
 	// Putting our business logic here(validations for register)
 	public void registerUser(User user,BindingResult result) {
-		
+		Optional<User> potentialUser = userRepo.findByEmail(user.getEmail());
 		// check if the password and confirm password dosen't match
 		if(!user.getPassword().equals(user.getConfirmPass())){
 			// adding validation errors to the result
 			result.rejectValue("password", "matches","Password & Confirm PW doesn't match !!!!");
-		}else {
+		}if(potentialUser.isPresent()){
+			result.rejectValue("email", "exist", "Email alraedy token ");
+		}
+		else{
 			// hashing password and saved user to the database
 			user.setPassword(BCrypt.hashpw(user.getPassword(), BCrypt.gensalt()));
 		}
