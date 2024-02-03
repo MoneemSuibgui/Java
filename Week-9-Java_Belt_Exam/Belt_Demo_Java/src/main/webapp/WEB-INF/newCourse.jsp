@@ -53,7 +53,7 @@
 				<form:errors path="time" class="text-danger"></form:errors>
 			</p>
 			<form:label path="time">Time :</form:label>
-			<form:input path="time" class="form-control mb-3" />
+			<form:input path="time" type="time" class="form-control mb-3" />
 
 			<p>
 				<form:errors path="description" class="text-danger"></form:errors>
