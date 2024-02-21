@@ -70,3 +70,16 @@
         <version>5.2.3</version>
     </dependency>
 ```
+
+#### application.properties file : edit the schema name and change the username and password to your own 
+```
+    # Where are jsp files? HERE!
+    spring.mvc.view.prefix=/WEB-INF/
+    # Data Persistence
+    spring.datasource.url=jdbc:mysql://localhost:3306/<<YOUR_SCHEMA_NAME>>?
+    spring.datasource.username=username
+    spring.datasource.password=password
+    spring.jpa.hibernate.ddl-auto=update
+    # For Update and Delete method hidden inputs
+    spring.mvc.hiddenmethod.filter.enabled=true
+```
