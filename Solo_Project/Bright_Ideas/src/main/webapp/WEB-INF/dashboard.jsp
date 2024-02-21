@@ -44,6 +44,7 @@
 			<textarea  class="form-control w-20"><c:out value="${idea.content}"></c:out></textarea>
 			<c:if test="${idea.creator == loginUser }">
 			<form action="/delete/${idea.id}" method="post">
+			<input type="hidden" name="_method" value="delete"/>
 				<button class="deleteBtn">X</button>
 			</form>
 			</c:if>
