@@ -8,12 +8,11 @@ import javax.validation.Valid;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.validation.BindingResult;
+import org.springframework.web.bind.annotation.DeleteMapping;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestMethod;
 
 import com.book_club.moneem.models.Idea;
 import com.book_club.moneem.models.User;
@@ -65,7 +64,7 @@ public class IdeaController {
 	}
 	
 	// delete route : delete idea
-	@RequestMapping(value="/delete/{IdeaId}",method=RequestMethod.POST)
+	@DeleteMapping("/delete/{IdeaId}")
 	public String destroy(@PathVariable("IdeaId") Long IdeaId) {
 		this.ideaService.delete(IdeaId);
 		return "redirect:/bright_ideas";
