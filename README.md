@@ -71,7 +71,8 @@
     </dependency>
 ```
 
-### application.properties file : edit the schema name and change the username and password to your own 
+### application.properties file
+#### Note : edit the schema name and change the username and password to your own 
 ```
     # Where are jsp files? HERE!
     spring.mvc.view.prefix=/WEB-INF/
