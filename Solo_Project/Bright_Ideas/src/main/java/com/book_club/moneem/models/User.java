@@ -53,7 +53,7 @@ public class User {
 	// created user object)
 	@Transient
 	@NotEmpty(message = "* Confirm Password is required!")
-	 @Column(length = 3000)
+	@Column(length = 3000)
 	@Size(min=8,max=200, message = "* Confirm Password must be between 8 and 200 characters")
 	private String confirmPass;
 
