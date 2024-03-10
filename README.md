@@ -16,7 +16,7 @@
 ### MVC response cycle
 ![mvc-response-cycle](https://github.com/MoneemSuibgui/Java/assets/125930635/a65dc946-6b65-43a2-a6fe-6bcfb0252a8d)
 
-### Dependencies to add in pom.xml file : 
+### Dependencies needed for most of Spring projects in this bootcamp
 ```
     <!-- DEPENDENCIES FOR STARTING SPRING PROJECTS-->
     <dependency>
