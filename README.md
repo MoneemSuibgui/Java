@@ -1,6 +1,6 @@
 ### Java stack roadmap : 
 ```
-    This Repository Contain all assignemnts from Coding Dojo Africa for java stack and it provides:
+    This Repository Contains all assignments from Coding Dojo bootcamp for java stack and it provides:
     
     * Base knowledge in procedural programming in Java
     * Object-oriented programming
