@@ -1,3 +1,15 @@
+### Java stack roadmap : 
+```
+    This Repository Contain all assignemnts from Coding Dojo Africa for java stack and it provides:
+    
+    * Base knowledge in procedural programming in Java
+    * Object-oriented programming
+    * MVC patterns using popular Java frameworks
+    * Build and manipulate databases using MySQL in this course
+    * Build full CRUD application include login registraion using Spring Boot framework
+    * Undrestand and Establish relationships between models 
+```
+
 ### Java Course Overview
 ![JavaConcept](https://github.com/MoneemSuibgui/Java_Projects/assets/125930635/6ffbb340-f5a8-4004-a4e0-ff2e88b2371b)
 
