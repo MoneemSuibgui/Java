@@ -7,6 +7,7 @@
     * MVC patterns using popular Java frameworks
     * Build and manipulate databases using MySQL in this course
     * Build full CRUD application include login registraion using Spring Boot framework
+    * Using postman to test APIs 
     * Undrestand and Establish relationships between models 
 ```
 
