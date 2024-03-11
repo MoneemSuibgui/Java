@@ -10,7 +10,10 @@
     * Using postman to test APIs 
     * Undrestand and Establish relationships between models 
 ```
-
+### Technologies :  
+```
+   HTML,CSS,Bootstrap library,JavaScript,Springboot framework
+```
 ### Java Course Overview
 ![JavaConcept](https://github.com/MoneemSuibgui/Java_Projects/assets/125930635/6ffbb340-f5a8-4004-a4e0-ff2e88b2371b)
 
