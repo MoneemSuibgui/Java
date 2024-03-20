@@ -1,10 +1,26 @@
+### Java stack roadmap : 
+```
+    This Repository Contains all assignments from Coding Dojo bootcamp for java stack and it provides:
+    
+    * Base knowledge in procedural programming in Java
+    * Object-oriented programming
+    * MVC patterns using popular Java frameworks
+    * Build and manipulate databases using MySQL in this course
+    * Build full CRUD application include login registraion using Spring Boot framework
+    * Using postman to test APIs 
+    * Undrestand and Establish relationships between models 
+```
+### Technologies :  
+```
+   HTML,CSS,Bootstrap library,JavaScript,Springboot framework,MySQL
+```
 ### Java Course Overview
 ![JavaConcept](https://github.com/MoneemSuibgui/Java_Projects/assets/125930635/6ffbb340-f5a8-4004-a4e0-ff2e88b2371b)
 
 ### MVC response cycle
 ![mvc-response-cycle](https://github.com/MoneemSuibgui/Java/assets/125930635/a65dc946-6b65-43a2-a6fe-6bcfb0252a8d)
 
-### Dependencies to add in pom.xml file : 
+### Dependencies needed for most of Spring projects in this bootcamp
 ```
     <!-- DEPENDENCIES FOR STARTING SPRING PROJECTS-->
     <dependency>
