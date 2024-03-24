@@ -12,7 +12,7 @@
 ```
 ### Technologies :  
 ```
-   HTML,CSS,Bootstrap library,JavaScript,Springboot framework,MySQL
+   HTML,CSS,Bootstrap library,JavaScript,Springboot framework,MySQL database
 ```
 ### Java Course Overview
 ![JavaConcept](https://github.com/MoneemSuibgui/Java_Projects/assets/125930635/6ffbb340-f5a8-4004-a4e0-ff2e88b2371b)
@@ -103,8 +103,13 @@
     spring.datasource.username=username
     spring.datasource.password=password
     spring.jpa.hibernate.ddl-auto=update
+    # Display queries in the console with pretty print the SQL
+    spring.jpa.show-sql=true
+    spring.jpa.properties.hibernate.format_sql=true
     # For Update and Delete method hidden inputs
     spring.mvc.hiddenmethod.filter.enabled=true
+    # Configure port : For changing the server port, modify the server.port property
+    server.port=8080
 ```
 
 ### JSP tag library imports, settings, external styling:
